@@ -1,0 +1,30 @@
+"base" R
+Total 5200 packages
+TASK VIEW link : to view the area specific packages
+for biological applications: Bioconductor Project
+
+to view available packages:
+> a <- available.packages()
+> head(rownames(a),3)
+
+INSTALL:
+
+TO FIND IF A PACKAGE Already Exists:
+find.package("packagename")
+install.packages("ggplot2") 
+install.packages(c("abc",xyz"))---installing multiple packages
+
+LIBRARY: to make make the downloaded package functionality accessible
+library(ggplot2) --- ----NO QUOTES
+search()---- to view the packages present in the system
+
+for biological packages:
+source("http://bioconductor.org/biocLite.R")
+biocLite()----installs the basic packages
+biocLite(c("genomicfeatures","AnnotationDbi"))----more packages
+
+http://www.bioconductor.org/install
+
+
+R TOOLS For WINDOWS:
+https://cran.r-project.org/bin/windows/Rtools 
